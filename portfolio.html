@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LIAN Portfolio</title>
+<meta charset="utf-8">
+<link rel="icon" href="IMG/ico.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="CSS/preloader.css">
+<script src="JS/preloader.js"></script>
+
+<link rel="stylesheet" href="CSS/header.css">
+<link rel="stylesheet" href="CSS/search-engine.css">
+<link rel="stylesheet" href="CSS/info-block.css">
+<link rel="stylesheet" href="CSS/portfolio.css">
+<link rel="stylesheet" href="CSS/portfolio_post.css">
+
+<link rel="stylesheet" href="CSS/font-awesome/css/all.min.css">
+
+<link rel="stylesheet" href="CSS/footer.css">
+</head>
+
+<body>
+<div class="preloader">
+	<div class="preloader__container">
+		<h1>LIAN</h1>
+		<p>Loading...</p>
+		<div class="progress-loading">
+			<div class="preloader__progress">
+				<div class="progress-line"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="header">
+	<div class="header__logo"></div>
+	<div class="header__menu">
+		<ul class="header__menu-ul">
+			<a href="home.html"><li class="header__menu-item">HOME</li></a>
+			<a href="about.html"><li class="header__menu-item">ABOUT</li></a>
+			<a href="portfolio.html"><li class="header__menu-item menu-item_active">PORTFOLIO</li></a>
+			<a href="blog.html"><li class="header__menu-item">BLOG</li></a>
+			<a href="contact.html"><li class="header__menu-item">CONTACT</li></a>
+		</ul>
+	</div>
+	<img class="header__search" src="IMG/icoSearch.png" alt="">
+</div>
+<div class="search-engine header__search-engine">
+	<input placeholder="Search website" class="search-engine_input-text" type="text">
+</div>
+
+<div class="info-block">
+	<div class="info__title">LATEST PROJECTS</div>
+	<div class="info__text">We Deliver Quality</div>
+</div>
+
+<div class="post__button">
+	<div class="post__button_prev" onclick="nextPost(-1)"><i class="fas fa-chevron-left"></i>  PREVIOUS</div>
+	<div class="post__button_next" onclick="nextPost(1)">NEXT  <i class="fas fa-chevron-right"></i></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div class="post__button_showall"><i class="fas fa-bars"></i>
+	SHOW ALL</div>
+</div>
+
+<div class="post">
+	<div class="post__text">
+		<h2>Pereira Creative Agency</h2>
+		<h3>Branding Design</h3>
+		<pre>February 12, 2021          <i class="fas fa-heart"></i> 324 likes</pre>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+		<h4>Role On Project:</h4>
+		<h5>Project Designer, Lead Designer, Markerting Head</h5>
+		<h4>Tags:</h4>
+		<h5>Mobile App, UI/UX design</h5>
+	</div>
+	<div class="post__img">
+		<div class="full"></div>
+		<div class="a" onclick="chosenPost(0)"></div>
+		<div class="b" onclick="chosenPost(1)"></div>
+		<div class="c" onclick="chosenPost(2)"></div>
+		<div class="d" onclick="chosenPost(3)"></div>
+	</div>
+</div>
+<div class="share" style="display: none;">
+	<button class="share__button" onclick="openLinks(0)">
+		<i class="fas fa-share-alt"></i> SHARE
+	</button>
+	<div class="share__link">
+		<a href="" class="share__link__item"><i class="fab fa-facebook-f"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-google-plus-g"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-twitter"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-linkedin-in"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-pinterest-p"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-instagram"></i></a>
+	</div>
+</div>
+
+<div class="post" style="display:none;">
+	<div class="post__text">
+		<h2>Pereira Creative Agency</h2>
+		<h3>Branding Design</h3>
+		<pre>February 28, 2021          <i class="fas fa-heart"></i> 1254 likes</pre>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+		<h4>Role On Project:</h4>
+		<h5>Project Designer, Lead Designer, Markerting Head</h5>
+		<h4>Tags:</h4>
+		<h5>Mobile App, UI/UX design</h5>
+	</div>
+	<div class="post__img p-i">
+		<div class="full"></div>
+		<div class="a" onclick="chosenPost(0)"></div>
+		<div class="b" onclick="chosenPost(1)"></div>
+		<div class="c" onclick="chosenPost(2)"></div>
+		<div class="d" onclick="chosenPost(3)"></div>
+	</div>
+</div>
+
+<div class="share" style="display:none;">
+	<button class="share__button" onclick="openLinks(1)">
+		<i class="fas fa-share-alt"></i> SHARE
+	</button>
+	<div class="share__link">
+		<a href="" class="share__link__item"><i class="fab fa-facebook-f"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-google-plus-g"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-twitter"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-linkedin-in"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-pinterest-p"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-instagram"></i></a>
+	</div>
+</div>
+
+<div class="post" style="display:none;">
+	<div class="post__text">
+		<h2>Pereira Creative Agency</h2>
+		<h3>Branding Design</h3>
+		<pre>April 28, 2021          <i class="fas fa-heart"></i> 477 likes</pre>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+		<h4>Role On Project:</h4>
+		<h5>Project Designer, Lead Designer, Markerting Head</h5>
+		<h4>Tags:</h4>
+		<h5>Mobile App, UI/UX design</h5>
+	</div>
+	<div class="post__img">
+		<div class="full"></div>
+		<div class="a" onclick="chosenPost(0)"></div>
+		<div class="b" onclick="chosenPost(1)"></div>
+		<div class="c" onclick="chosenPost(2)"></div>
+		<div class="d" onclick="chosenPost(3)"></div>
+	</div>
+</div>
+
+<div class="share" style="display:none;">
+	<button class="share__button" onclick="openLinks(2)">
+		<i class="fas fa-share-alt"></i> SHARE
+	</button>
+	<div class="share__link">
+		<a href="" class="share__link__item"><i class="fab fa-facebook-f"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-google-plus-g"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-twitter"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-linkedin-in"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-pinterest-p"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-instagram"></i></a>
+	</div>
+</div>
+
+<div class="post" style="display:none;">
+	<div class="post__text">
+		<h2>Pereira Creative Agency</h2>
+		<h3>Branding Design</h3>
+		<pre>May 28, 2021          <i class="fas fa-heart"></i> 267 likes</pre>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+		<h4>Role On Project:</h4>
+		<h5>Project Designer, Lead Designer, Markerting Head</h5>
+		<h4>Tags:</h4>
+		<h5>Mobile App, UI/UX design</h5>
+	</div>
+	<div class="post__img">
+		<div class="full"></div>
+		<div class="a" onclick="chosenPost(0)"></div>
+		<div class="b" onclick="chosenPost(1)"></div>
+		<div class="c" onclick="chosenPost(2)"></div>
+		<div class="d" onclick="chosenPost(3)"></div>
+	</div>
+</div>
+
+<div class="share" style="display:none;">
+	<button class="share__button" onclick="openLinks(3)">
+		<i class="fas fa-share-alt"></i> SHARE
+	</button>
+	<div class="share__link">
+		<a href="" class="share__link__item"><i class="fab fa-facebook-f"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-google-plus-g"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-twitter"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-linkedin-in"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-pinterest-p"></i></a>
+		<a href="" class="share__link__item"><i class="fab fa-instagram"></i></a>
+	</div>
+</div>
+
+<div class="share share__underpost">
+		<button class="share__button" onclick="openLinks(4)">
+			<i class="fas fa-share-alt"></i> SHARE
+		</button>
+		<div class="share__link">
+			<a href="" class="share__link__item"><i class="fab fa-facebook-f"></i></a>
+			<a href="" class="share__link__item"><i class="fab fa-google-plus-g"></i></a>
+			<a href="" class="share__link__item"><i class="fab fa-twitter"></i></a>
+			<a href="" class="share__link__item"><i class="fab fa-linkedin-in"></i></a>
+			<a href="" class="share__link__item"><i class="fab fa-pinterest-p"></i></a>
+			<a href="" class="share__link__item"><i class="fab fa-instagram"></i></a>
+		</div>
+	</div>
+
+<div class="works">
+	<div class="works__text">
+		<h2>Related Works</h2>
+		<h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </h3>
+	</div>
+	<div class="works__img">
+		<img src="IMG/Portfolio/works1.png" alt="">
+		<img src="IMG/Portfolio/works2.png" alt="">
+		<img src="IMG/Portfolio/works3.png" alt="">
+	</div>
+</div>
+
+<div class="footer">
+	<div class="footer__logo"></div>
+	<div class="social-link">
+		<ul class="social-link__ul">
+			<a href="" class="social-link__item"><i class="fab fa-facebook-f"></i></a>
+			<a href="" class="social-link__item"><i class="fab fa-google-plus-g"></i>
+			<a href="" class="social-link__item"><i class="fab fa-twitter"></i></a>
+			<a href="" class="social-link__item"><i class="fab fa-linkedin-in"></i></a>
+			<a href="" class="social-link__item"><i class="fab fa-pinterest-p"></i></a>
+			<a href="" class="social-link__item"><i class="fab fa-instagram"></i></a>
+		</ul>
+	</div>
+	<p class="footer__text">© 2021 Mulitix Theme by ThemeForces All Rights</p>
+	<p class="footer__text">CSS and JS Implementation ©SidneyMur</p>
+</div>
+
+</body>
+<script src="JS/search.js"></script>
+<script src="JS/post.js"></script>
+</html>

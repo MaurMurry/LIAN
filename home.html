@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LIAN Home</title>
+<meta charset="utf-8">
+<link rel="icon" href="IMG/ico.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="CSS/preloader.css">
+<script src="JS/preloader.js"></script>
+
+<link rel="stylesheet" href="CSS/header.css">
+<link rel="stylesheet" href="CSS/search-engine.css">
+<link rel="stylesheet" href="CSS/home_slider.css">
+<link rel="stylesheet" href="CSS/home_content.css">
+
+<link rel="stylesheet" href="CSS/font-awesome/css/all.min.css">
+
+<link rel="stylesheet" href="CSS/footer.css">
+<link rel="stylesheet" href="CSS/home_modal.css">
+
+</head>
+
+<body>
+<div class="preloader">
+	<div class="preloader__container">
+		<h1>LIAN</h1>
+		<p>Loading...</p>
+		<div class="progress-loading">
+			<div class="preloader__progress">
+				<div class="progress-line"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bg_layer">
+<div class="header">
+	<div class="header__logo"></div>
+	<div class="header__menu">
+		<ul class="header__menu-ul">
+			<a href="home.html"><li class="header__menu-item menu-item_active">HOME</li></a>
+			<a href="about.html"><li class="header__menu-item">ABOUT</li></a>
+			<a href="portfolio.html"><li class="header__menu-item">PORTFOLIO</li></a>
+			<a href="blog.html"><li class="header__menu-item">BLOG</li></a>
+			<a href="contact.html"><li class="header__menu-item">CONTACT</li></a>
+		</ul>
+	</div>
+	<img class="header__search" src="IMG/icoSearch.png" alt="">
+</div>
+<div class="search-engine header__search-engine">
+	<input placeholder="Search website" class="search-engine_input-text" type="text">
+</div>
+
+<div class="slider">
+	<div class="slider-wrrapper slider__size">
+		<div class="slider-wrapper__title-up"></div>
+		<div class="slider-wrapper__title-down"></div>
+	</div>
+		<div class="slider__button-for-scroll_prev slider-wrapper__button-for-scroll" onclick="sliderCounter(-1)">&#10094</div>
+		<div class="slider__button-for-scroll_next slider-wrapper__button-for-scroll" onclick="sliderCounter(1)">&#10095</div>
+	<div class="dots slider__dots">
+		<div class="dots__item" onclick="dotsPress(0)">
+		</div>
+		<div class="dots__item" onclick="dotsPress(1)"></div>
+		<div class="dots__item" onclick="dotsPress(2)"></div>
+	</div>
+</div>
+
+
+<div class="content">
+	<div class="content__menu">
+		<ul class="content__menu-ul">
+			<li class="content__menu-item content__menu-item_active" onclick="filter(true)">ALL</li>
+			<li class="content__menu-item" onclick="filter([0,8,9],1)">LOGO</li>
+			<li class="content__menu-item" onclick="filter([1,4,6],2)">MOBILE APP</li>
+			<li class="content__menu-item" onclick="filter([2,3,8,9],3)">WORDPRESS</li>
+			<li class="content__menu-item" onclick="filter([0,3,5,6],4)">WEB DESIGN</li>
+			<li class="content__menu-item" onclick="filter([1,4,6],5)">UI/IX</li>
+			<li class="content__menu-item_without-after" onclick="filter([0,8,9],6)">BRANDING</li>
+		</ul>
+	</div>
+	<div class="content__flexbox-for-content">
+		<img src="IMG/contentIMG/Layer 5.png" alt="Image not found">
+		<img src="IMG/contentIMG/Layer 6.png" alt="Image not found">
+		<img src="IMG/contentIMG/Layer 7.png" alt="Image not found">
+		<img src="IMG/contentIMG/Layer 4.png" alt="Image not found">
+		<img src="IMG/contentIMG/Layer 3.png" alt="Image not found">
+		<img src="IMG/contentIMG/Layer 8.png" alt="Image not found">
+		<img src="IMG/contentIMG/Layer 9.png" alt="Image not found">
+		<img src="IMG/contentIMG/Layer 10.png" alt="Image not found">
+		<img src="IMG/contentIMG/Layer 11.png" alt="Image not found">
+		<img src="IMG/contentIMG/Layer 12.png" alt="Image not found">
+	</div>
+	<div class="content__button-more button-more">LOAD MORE</div>
+</div>
+
+<div class="footer">
+	<div class="footer__logo"></div>
+	<div class="social-link">
+		<ul class="social-link__ul">
+			<a href="" class="social-link__item"><i class="fab fa-facebook-f"></i></a>
+			<a href="" class="social-link__item"><i class="fab fa-google-plus-g"></i>
+			<a href="" class="social-link__item"><i class="fab fa-twitter"></i></a>
+			<a href="" class="social-link__item"><i class="fab fa-linkedin-in"></i></a>
+			<a href="" class="social-link__item"><i class="fab fa-pinterest-p"></i></a>
+			<a href="" class="social-link__item"><i class="fab fa-instagram"></i></a>
+		</ul>
+	</div>
+	<p class="footer__text">© 2021 Mulitix Theme by ThemeForces All Rights</p>
+	<p class="footer__text">CSS and JS Implementation ©SidneyMur</p>
+</div>
+</div>
+	<div class="modal" style="display: none">
+		<div class="modal-header">
+			<p>Основная информация</p>
+			<text onclick="showModal('1','none')" class="close">
+				<i class="fas fa-times"></i>
+			</text>
+			<nav>
+				<li class="modal-home" onclick="modalSelection([1],0)">
+					Главная
+				</li>
+				<li class="modal-info"  onclick="modalSelection([3],1)">
+					Информация
+				</li>
+				<li class="modal-copyrigth"  onclick="modalSelection([5,10,12],2)">
+					Автор. право
+				</li>
+				<li><a href="https://www.instagram.com/mell_murr/">
+					<i class="fab fa-instagram"></i>
+				</a></li>
+			</nav>
+		</div>
+		<div class="modal-content">
+			<div class="modal-ru">
+				<p style="display: none;">
+				Сайт создавался для практики верстки, без использования библиотек<br>
+				Предоставлен для ознакомления<br><br>
+				Использовано строчек кода:<br>
+				</p>
+
+				<p style="display: none;">
+				JS Библиотеки: не используются;<br><br>
+				Flexbox + Grid: используются;<br><br>
+				Найменование: БЭМ;<br><br>
+				Шаблонизатор: не используется;<br><br>
+				Препроцессор CSS: не используется;<br><br>
+				Web-pack: не используется;<br><br>
+				Другие библиотеки: Font Awesome;<br><br>
+				Адаптивность:Компьютер, Планшет;<br><br>
+				</p>
+				
+				<p style="display: none;">
+				Сайт разработан с макета(PSD) взятого на сайте: <a href="https://tpverstak.ru/">сайт с макетом</a> ;<br><br>
+				Реализация адаптивной верстки(для планшетов) и интерактив разработан SidneyMur;
+				</p><br><br><br>
+				
+				<p style="display: none;">
+				Для обратной связи используйте: 
+				</p>
+				<ul style="display: none;">
+					<li><a style="color:#e21438;" href="https://www.instagram.com/mell_murr/">
+						<i class="fab fa-instagram"></i>
+					</a></li>
+					<li><a style="color:#28a2e3;" href="https://t.me/sidneymur">
+						<i class="fab fa-telegram-plane"></i>
+					</a></li>
+					<li><a href="https://github.com/MaurMurry" style="color:#313131;">
+						<i class="fab fa-github"></i>
+					</a></li>
+				</ul>
+			</div>
+
+
+			<div class="modal-en" style="display: none;">
+				<p>
+				The site was created for the practice of layout, without using third-party libraries <br>
+				Provided for review <br> <br>
+				Lines of code used:<br>
+				</p>
+				
+				<p style="display: none;">
+				JS Libs: none;<br><br>
+				Flexbox + Grid: use;<br><br>
+				Naming: BEM;<br><br>
+				Template processor: none;<br><br>
+				Preprocessos CSS: none;<br><br>
+				Web-pack: none;<br><br>
+				Other Libs: Font Awesome;<br><br>
+				Adaptability:Dekstop, Table;<br><br>
+				</p>
+				
+				<p style="display: none;">
+				The site is developed based on the layout (PSD) taken on the site: <a href="https://tpverstak.ru/">link</a> ;<br><br>
+				Implementation of responsive layout (for tablets) and interactive developed by SidneyMur;
+				</p><br><br><br>
+				
+				<p style="display: none;">For feedback use: </p>
+				
+				<ul style="display: none;">
+					<li><a style="color:#e21438;" href="https://www.instagram.com/mell_murr/">
+						<i class="fab fa-instagram"></i>
+					</a></li>
+					<li><a style="color:#28a2e3;" href="https://t.me/sidneymur">
+						<i class="fab fa-telegram-plane"></i>
+					</a></li>
+					<li><a href="https://github.com/MaurMurry" style="color:#313131;">
+						<i class="fab fa-github"></i>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<i class="fas fa-align-center"></i>
+			<text class="language" onclick="swapLanguage(this)">EN</text>
+		</div>
+	</div>
+
+</body>
+
+<script src="JS/slider.js"></script>
+<script src="JS/search.js"></script>
+<script src="JS/filter.js"></script>
+<script src="JS/modal.js"></script>
+
+</html>
