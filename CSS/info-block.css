@@ -1,0 +1,53 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Light.ttf);
+  font-weight: 300;
+}
+
+.info-block {
+  background-image: url(../IMG/About/infoBack.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+
+.info__title {
+  font-size: 48px;
+  font-family: Roboto;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  line-height: 0.5;
+  text-align: left;
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  letter-spacing: 3px;
+  position: absolute;
+  text-transform: uppercase;
+  left: 14.5%;
+  top: 204px;
+  width: 520px;
+  height: 42px;
+  background: black;
+}
+.info__text {
+  left: 14.5%;
+  top: 300px;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 300;
+  line-height: 1.333;
+  text-transform: uppercase;
+  position: absolute;
+  width: 303px;
+  height: 13px;
+  color: black;
+  letter-spacing: 4px;
+}
+
+@media (max-width: 1025px) {
+  .info-block {
+    background-size: 115% 100%;
+  }
+}

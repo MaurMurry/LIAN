@@ -1,0 +1,328 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Bold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fa-heart,
+.fa-share-alt {
+  cursor: pointer;
+}
+
+.info-block {
+  background-image: url(../IMG/Blog/blogBack.png);
+}
+
+.blog {
+  max-width: 1230px;
+  height: 1510px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 360px;
+  font-family: Roboto;
+}
+.ds-n {
+  display: none;
+}
+
+.grid-container__line-one {
+  height: 1380px;
+  grid-template-rows: 400px 550px 330px;
+  gap: 50px 1px;
+  grid-template-areas:
+    "blog__post-one"
+    "blog__post-two"
+    "blog__post-three";
+}
+.grid-container__line-two {
+  height: 1450px;
+  grid-template-rows: 550px 250px 550px;
+  gap: 50px 1px;
+  grid-template-areas:
+    "blog__post-four"
+    "blog__video"
+    "blog__post-five";
+}
+.grid-container__line-three {
+  height: 1100px;
+  grid-template-rows: 40px 445px 245px 330px;
+  gap: 10px 1px;
+  grid-template-areas:
+    "blog__search"
+    "blog__recent-posts"
+    "blog__tags"
+    "blog__instagram";
+}
+
+.blog__post-one {
+  grid-area: blog__post-one;
+  padding-left: 12px;
+}
+.blog__post-two {
+  grid-area: blog__post-two;
+  padding-left: 12px;
+}
+.blog__post-three {
+  grid-area: blog__post-three;
+  background: rgb(0, 0, 0, 0.9) url(../IMG/Blog/post3Back.png);
+  background-blend-mode: darken;
+  padding-left: 12px;
+}
+
+.blog__post-four {
+  grid-area: blog__post-four;
+}
+.blog__video {
+  grid-area: blog__video;
+}
+.blog__post-five {
+  grid-area: blog__post-five;
+}
+
+.blog__search {
+  grid-area: blog__search;
+}
+.blog__recent-posts {
+  grid-area: blog__recent-posts;
+}
+.blog__tags {
+  grid-area: blog__tags;
+}
+.blog__instagram {
+  grid-area: blog__instagram;
+}
+
+.post_img-size {
+  width: 358px;
+  margin-left: 1px;
+  height: 250px;
+}
+.post__font-h2 {
+  padding-top: 40px;
+  font-weight: 800;
+  font-size: 22px;
+}
+.post__font-h3 {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #cfcfcf;
+}
+.post__font-p {
+  padding-top: 35px;
+  width: 340px;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #9b9b9b;
+}
+.post__font-pre {
+  padding-top: 45px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 800;
+  color: #aeaeae;
+}
+
+.blog__post-three {
+  background: rgb(0, 0, 0, 0.9) url(../IMG/Blog/post3Back.png);
+  background-blend-mode: darken;
+}
+.blog__post-three > h2 {
+  color: white;
+}
+
+.blog__video {
+  background: rgb(0, 0, 0, 0.6) url(../IMG/Blog/video.png);
+  background-size: 100% 100%;
+  background-blend-mode: darken;
+}
+.button-play {
+  width: 70px;
+  height: 70px;
+  background: grey;
+  border-radius: 35px;
+  margin: 0px auto;
+  margin-top: 90px;
+  cursor: pointer;
+}
+.play {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-left: 24px solid #e7e7e7;
+  border-bottom: 12px solid transparent;
+  margin-left: 26px;
+  margin-top: 23px;
+}
+
+.blog__search > input {
+  width: 310px;
+  height: 38px;
+  outline: none;
+  border-width: 0px;
+  padding-left: 9px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  color: #999999;
+}
+.blog__search > input:focus {
+  border-radius: 3px;
+  background: lightgray;
+}
+.blog__search > button {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  background: #999999;
+  outline: none;
+  margin-left: -3px;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+.blog__search > button:hover {
+  background: #5f5f5f;
+  cursor: pointer;
+}
+
+.blog__title-block {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  background-color: #ebebeb;
+  font-weight: 300;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  line-height: 1.333;
+  letter-spacing: 5px;
+}
+.container-fluid-for-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 340px;
+  margin: 20px;
+}
+.recent-post {
+  display: grid;
+  width: 320px;
+  height: 65px;
+  grid-template-areas:
+    "img text"
+    "img date";
+  padding-bottom: 26px;
+  cursor: pointer;
+}
+.recent-post > img {
+  grid-area: img;
+}
+.recent-post-text {
+  grid-area: text;
+  width: 190px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #3d3d3d;
+}
+.recent-post-date {
+  grid-area: date;
+  font-size: 15px;
+  font-weight: 300;
+  color: #e2e2e2;
+}
+
+.tags {
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.tags__button {
+  padding: 5px 10px;
+  border: 1px solid #eeeeee;
+  color: #c1c1c1;
+  margin-right: 10px;
+  margin-top: 14px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.tags__button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.container-for-img {
+  margin-left: 27px;
+  margin-top: 35px;
+}
+.container-for-img img {
+  cursor: pointer;
+}
+
+/* Медиа запрос для скрытия .grid-container__line-two и через класс ds-n(display:none;) мы открывает недостоющие элементы в первой линии(посты) а в третью(только видео) */
+
+@media (max-width: 1115px) {
+  .blog {
+    justify-content: space-around;
+    height: 2540px;
+  }
+
+  .grid-container__table-one {
+    height: 2500px;
+    grid-template-rows: 400px 550px 330px 550px 550px;
+    gap: 30px 1px;
+    grid-template-areas:
+      "blog__post-one"
+      "blog__post-two"
+      "blog__post-three"
+      "blog__post-four"
+      "blog__post-five";
+  }
+  .grid-container__table-two {
+    height: 1350px;
+    grid-template-rows: 40px 445px 245px 250px 330px;
+    gap: 10px 1px;
+    grid-template-areas:
+      "blog__search"
+      "blog__recent-posts"
+      "blog__tags"
+      "blog__video"
+      "blog__instagram";
+  }
+
+  .ds-n {
+    display: block;
+  }
+  .grid-container__line-two {
+    display: none;
+  }
+}

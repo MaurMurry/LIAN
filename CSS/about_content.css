@@ -1,0 +1,381 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Bold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+
+.info-block {
+  background-image: url(../IMG/About/infoBack.png);
+}
+
+.story {
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.story__img {
+  width: 530px;
+  height: 600px;
+  background-image: url(../IMG/About/skill.png);
+  background-size: 100% 100%;
+  margin-left: 14.5%;
+}
+
+.story__text {
+  width: 560px;
+  position: absolute;
+  left: 50.75%;
+  top: 517px;
+  font-family: Roboto;
+  font-weight: 300;
+  line-height: 1.333;
+}
+.story__text p {
+  color: #777777;
+  letter-spacing: 2px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.story__text > h3,
+.story__skills > h3 {
+  font-family: Roboto;
+  font-weight: 400;
+  letter-spacing: 5px;
+  padding-bottom: 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.story__skills {
+  position: absolute;
+  top: 829px;
+  left: 50.75%;
+}
+.progress {
+  padding-bottom: 20px;
+}
+.progress > text {
+  font-size: 16px;
+  font-family: Roboto;
+  color: rgb(47, 48, 47);
+  font-weight: 800;
+  line-height: 0.625;
+}
+.cont-progress {
+  background: #ebebeb;
+  width: 552px;
+  height: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.line-progress {
+  height: 2px;
+  margin-left: 10px;
+  background: #a1a1a1;
+}
+.dot-progress {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background: black;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dot-center {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background: white;
+}
+
+.digits-progress {
+  display: none;
+  position: absolute;
+  width: 56px;
+  height: 20px;
+  background: black;
+  justify-content: flex-end;
+  place-items: center;
+  color: #fff;
+  z-index: 9000;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 12%;
+}
+.digits-progress::after {
+  content: "";
+  position: absolute;
+  transform: scale(-0.55) rotate(110deg);
+  right: 36px;
+  top: -2px;
+  border: 20px solid transparent;
+  border-bottom: 20px solid black;
+  z-index: 8000;
+}
+
+.d-p-pos90 > div.digits-progress {
+  top: 64px;
+  left: 475px;
+}
+.d-p-pos90 div.dot-progress {
+  margin-left: 86%;
+}
+.d-p-pos90 div.line-progress {
+  width: 475px;
+}
+
+.d-p-pos95 > div.digits-progress {
+  top: 132px;
+  left: 502px;
+}
+.d-p-pos95 div.dot-progress {
+  margin-left: 91%;
+}
+.d-p-pos95 div.line-progress {
+  width: 495px;
+}
+
+.d-p-pos50 > div.digits-progress {
+  top: 200px;
+  left: 276px;
+}
+.d-p-pos50 div.dot-progress {
+  margin-left: 50%;
+}
+.d-p-pos50 div.line-progress {
+  width: 275px;
+}
+
+.d-p-pos85 > div.digits-progress {
+  top: 268px;
+  left: 414px;
+}
+.d-p-pos85 div.dot-progress {
+  margin-left: 75%;
+}
+.d-p-pos85 div.line-progress {
+  width: 405px;
+}
+
+.team {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.team__text {
+  width: 612px;
+  margin: 0 auto;
+  text-align: center;
+}
+.team__text > h3 {
+  font-size: 30px;
+  font-family: Roboto;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 0.8;
+  font-weight: 300;
+  letter-spacing: 5px;
+  padding-bottom: 40px;
+}
+.team__text > p {
+  font-size: 16px;
+  color: #777777;
+  font-family: Roboto;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.333;
+  padding-bottom: 70px;
+}
+
+.team__cards {
+  max-width: 1340px;
+  height: 620px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  max-width: 358px;
+  max-height: 620px;
+}
+.card__text {
+  padding-top: 30px;
+  margin-left: 10%;
+}
+.card__text > h2 {
+  font-size: 24px;
+  font-family: Roboto;
+  font-weight: 800;
+  color: rgb(4, 22, 8);
+  text-transform: uppercase;
+  text-align: left;
+}
+.card__text > h3 {
+  font-size: 18px;
+  padding-bottom: 20px;
+  font-family: Roboto;
+  font-weight: 800;
+  color: #9c9c9c;
+}
+.card__text > p {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  color: #9c9c9c;
+}
+
+@media (max-width: 1600px) {
+  .story {
+    padding-bottom: 230px;
+  }
+  .story__img {
+    width: 380px;
+    height: 450px;
+    background-image: url(../IMG/About/skill.png);
+    background-size: 100% 100%;
+    margin-left: 3%;
+  }
+  .story__skills {
+    position: absolute;
+    top: 829px;
+    left: 42.75%;
+  }
+  .story__text {
+    left: 42.75%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .story__img {
+    width: 460px;
+  }
+  .story__text {
+    width: 500px;
+    left: 50.5%;
+  }
+  .story__text > h3 {
+    font-size: 24px;
+  }
+  .story__text p {
+    width: 450px;
+    font-size: 18px;
+  }
+
+  .story__skills {
+    top: 975px;
+    left: 3.75%;
+  }
+  .story__skills > h3 {
+    padding-top: 20px;
+    font-size: 26px;
+    font-weight: 800;
+    margin-left: 0px;
+  }
+  .cont-progress {
+    width: 710px;
+    height: 20px;
+  }
+
+  .d-p-pos90 > div.digits-progress {
+    top: 90px;
+    left: 613px;
+  }
+  .d-p-pos90 div.line-progress {
+    width: 610px;
+  }
+
+  .d-p-pos95 > div.digits-progress {
+    top: 170px;
+    left: 650px;
+  }
+  .d-p-pos95 div.line-progress {
+    width: 645px;
+  }
+
+  .d-p-pos50 > div.digits-progress {
+    top: 247px;
+    left: 357px;
+  }
+  .d-p-pos50 div.line-progress {
+    width: 357px;
+  }
+
+  .d-p-pos85 > div.digits-progress {
+    top: 326px;
+    left: 535px;
+  }
+  .d-p-pos85 div.line-progress {
+    width: 530px;
+  }
+
+  .dot-progress {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+  }
+  .dot-center {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+  }
+  .line-progress {
+    height: 5px;
+    margin-left: 15px;
+  }
+
+  .team {
+    padding-top: 250px;
+    padding-bottom: 0px;
+  }
+  .team__cards {
+    width: 730px;
+    margin-bottom: -100px;
+  }
+  .card > img {
+    max-width: 230px;
+  }
+  .card__text > h2 {
+    font-size: 24px;
+  }
+  .card__text > h3 {
+    font-size: 18px;
+  }
+  .card__text > p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 995px) {
+  .story__img {
+    width: 370px;
+  }
+  .story__text {
+    width: 340px;
+    left: 54%;
+  }
+  .story__text p {
+    width: 340px;
+    font-size: 16px;
+  }
+  .card__text {
+    margin-left: 5%;
+  }
+}

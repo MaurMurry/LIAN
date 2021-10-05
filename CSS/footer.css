@@ -1,0 +1,74 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Bold.ttf);
+  font-weight: 800;
+}
+
+.footer {
+  height: 300px;
+  background: url(../IMG/baseFooter.png);
+  overflow: hidden;
+}
+
+.footer__logo {
+  margin: 0px auto;
+  margin-top: 64px;
+  height: 35px;
+  width: 131px;
+  background: url(../IMG/logo.png);
+  overflow: hidden;
+}
+
+.social-link {
+  margin-top: 45px;
+  height: 63px;
+  background: url(../IMG/linesSocial.png);
+}
+
+.social-link__ul {
+  height: 63px;
+  width: 28.25%;
+  list-style: none;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-link__item {
+  font-size: 14pt;
+  margin: auto 0px;
+  height: 28px;
+  line-height: 1.714;
+  color: #777777;
+}
+.social-link__item i:hover {
+  color: #495df1;
+}
+
+.footer__text {
+  font-family: Roboto;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 2;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -25px;
+  color: #777777;
+}
+
+@media (max-width: 1320px) {
+  .social-link__ul {
+    width: 65.25%;
+  }
+}

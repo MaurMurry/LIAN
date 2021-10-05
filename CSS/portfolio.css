@@ -1,0 +1,64 @@
+@font-face {
+  font-family: Roboto L;
+  src: url(../FONTS/Roboto-Light.ttf);
+  font-weight: lighter;
+}
+@font-face {
+  font-family: Roboto L;
+  src: url(../FONTS/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Roboto R;
+  src: url(../FONTS/Roboto-Regular.ttf);
+}
+
+.info-block {
+  background-image: url(../IMG/Portfolio/portfolioBack.png);
+}
+
+.works__text {
+  width: 580px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.works__text h2 {
+  font-size: 30px;
+  font-family: Roboto L;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 0.8;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  padding-bottom: 45px;
+}
+
+.works__text h3 {
+  font-family: Roboto R;
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+  line-height: 2.143;
+  padding-bottom: 55px;
+}
+
+.works__img {
+  width: 1140px;
+  height: 250px;
+  display: flex;
+  margin: 0px auto;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+
+@media (max-width: 1160px) {
+  .works__img {
+    width: 750px;
+    height: 520px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .works__img img {
+    padding-top: 20px;
+  }
+}

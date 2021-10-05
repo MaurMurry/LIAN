@@ -1,0 +1,269 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Bold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../FONTS/Roboto-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.office-info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 0px auto;
+  justify-content: space-between;
+  padding: 85px 0px;
+}
+
+.office-info__text {
+  width: 350px;
+}
+
+.office-info__text h1 {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 0.8;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.office-info__text h2 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 0.8;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.office-info__text p {
+  padding-top: 40px;
+}
+
+.office-info__text h4 {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 40px 0px;
+}
+
+.office-info__text h5 {
+  font-family: Roboto;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.office-info__form {
+  width: 800px;
+}
+
+.office-info__form input {
+  width: 345px;
+  height: 38px;
+  border: 1px solid #a4a4a4;
+  padding-left: 14px;
+  background: #fafafa;
+  margin-right: 26px;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+}
+.office-info__form input:focus {
+  outline: none;
+  width: 340px;
+  border-left: 5px solid #a4a4a4;
+}
+
+.email {
+  margin-right: -4px;
+}
+
+.office-info__form textarea {
+  margin-top: 30px;
+  width: 736px;
+  height: 140px;
+  resize: none;
+  border: 1px solid #a4a4a4;
+  outline: none;
+  padding-left: 14px;
+  padding-top: 10px;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+}
+.office-info__form textarea:focus {
+  width: 731px;
+  border-left: 5px solid #a4a4a4;
+}
+
+.office-info__form button {
+  width: 220px;
+  height: 40px;
+  margin-top: 30px;
+  font-family: Roboto;
+  font-weight: 800;
+  color: white;
+  background: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.office-info__form button:hover {
+  color: black;
+  background: #a4a4a4;
+}
+
+@media (max-width: 2200px) {
+  .office-info {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .office-info {
+    width: 98%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .office-info {
+    width: 74%;
+    padding: 76px;
+    padding-top: 30px;
+  }
+  .office-info__form input {
+    width: 600px;
+    height: 60px;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-right: 26px;
+  }
+  .email {
+    margin-right: -4px;
+  }
+  .office-info__form textarea {
+    height: 200px;
+  }
+  .office-info__form button {
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .office-info__text {
+    width: 620px;
+  }
+  .office-info__text h1 {
+    font-size: 44px;
+  }
+  .office-info__text h2 {
+    font-size: 32px;
+  }
+  .office-info__text p {
+    font-size: 22px;
+  }
+  .office-info__text h4 {
+    font-size: 22px;
+  }
+  .office-info__text h5 {
+    font-size: 22px;
+  }
+}
+
+.card__text {
+  width: 580px;
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 70px;
+}
+.card__text h2 {
+  font-size: 30px;
+  font-family: Roboto;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 0.8;
+  font-weight: 300;
+  letter-spacing: 5px;
+  padding-bottom: 45px;
+}
+.card__text h3 {
+  font-family: Roboto;
+  font-weight: 800;
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+  line-height: 2.143;
+  padding-bottom: 55px;
+}
+
+.card-list {
+  width: 1140px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+
+.card {
+  width: 354px;
+  margin: 0px auto;
+}
+.card h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: Robobo;
+  font-weight: 300;
+  padding-top: 25px;
+}
+.card p {
+  padding-top: 25px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.877;
+  color: #777777;
+}
+
+@media (max-width: 960px) {
+  .office-info {
+    width: 96%;
+    padding: 76px 0px;
+    padding-left: 30px;
+  }
+  .office-info__form input {
+    width: 550px;
+  }
+  .office-info__form textarea {
+    width: 700px;
+  }
+}
+
+@media (max-width: 1142px) {
+  .card-list {
+    width: 755px;
+  }
+  .card {
+    padding-bottom: 50px;
+  }
+}
